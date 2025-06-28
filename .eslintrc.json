@@ -1,3 +1,12 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/babel", // Add or ensure this is present
+    "next/core-web-vitals" // Keep other extends if you have them
+  ],
+  "parserOptions": {
+    "babelOptions": {
+      "presets": ["next/babel"] // This might also be needed for some setups
+    }
+  }
+  // ... other ESLint rules and settings
 }
